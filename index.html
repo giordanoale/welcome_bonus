@@ -38,24 +38,55 @@
 
     <main>
         <div class="jumbotron">
-            <img id="img_bonus" class="bounce-in-top" src="src/250x119-new-welcome-bonus-detail.png" alt="">
             <div class="box">
-                <h1 id="title" class="slide-in-left highlight">
-                DOPPIO BONUS DI BENVENUTO SCOMMESSE
-                </h1>
-                <h2 id="subtitle" class="slide-in-right">
-                    <span class="highlight">5€</span> SUBITO AL DEPOSITO <span class="highlight">+</span> 
-                    BONUS FINO A <span class="highlight">300€</span> 
-                </h2>
+                <img id="img_bonus" class="bounce-in-top" src="src/250x119-new-welcome-bonus-detail.png" alt="">
+                <!-- <div class="box"> -->
+                    <h1 id="title" class="slide-in-left highlight">
+                        DOPPIO BONUS DI BENVENUTO SCOMMESSE
+                    </h1>
+                    <h2 id="subtitle" class="slide-in-right">
+                        <span class="highlight">5€</span> SUBITO AL DEPOSITO <span class="highlight">+</span>
+                        BONUS FINO A <span class="highlight">300€</span>
+                    </h2>
+                <!-- </div> -->
+                <div class="btn slide-in-bck-center">REGISTRATI</div>
             </div>
-            <div class="btn slide-in-bck-center">REGISTRATI</d>
+            <div class="box">
+                <img id="rnd_img" src="" alt="">
+            </div>
         </div>
     </main>
     
     <footer>
         <div>
-            Poi giocare solo se maggiorenne. Il gioco può causare dipendenza patologica. <a href="https://www.eurobet.it/guida/probabilita-di-vincita.html">Probabilità di vincita</a>
+            <p>Poi giocare solo se maggiorenne. Il gioco può causare dipendenza patologica. <a href="https://www.eurobet.it/guida/probabilita-di-vincita.html">Probabilità di vincita</a></p>
+        </div>
+        <div>
+            <img class="adv_img" src="src/gioco_responsabile_w.svg" alt="">
+            <img class="adv_img" src="src/aams_18.svg" alt="">
+            <img class="adv_img" src="src/adm.svg" alt="">
+            <img class="adv_img" src="src/aams_monopoli.svg" alt="">
+            <img class="adv_img" src="src/entain.png" alt="">
+            <img class="adv_img" src="src/gordon-moody-white-logo.svg" alt="">
         </div>
     </footer>
 </body>
+
+<script>
+    function getRandomIntInclusive(min, max) {
+            min = Math.ceil(1);
+            max = Math.floor(10);
+            return Math.floor(Math.random() * (max - min + 1) + min); 
+        }
+
+    var number = getRandomIntInclusive(1, 10);
+
+    if (number % 2 == 0) {
+        console.log("Pari");
+        document.getElementById("rnd_img").src = "src/player1.png";
+    } else {
+        console.log("Dispari");
+        document.getElementById("rnd_img").src = "src/player2.png";
+    }
+</script>
 </html>
