@@ -18,11 +18,7 @@ h1, h2 {
 }
 
 main {
-
     background-color: #24639e;
-    /* background-image: url("src/back_stadium.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat; */
     min-height: 100vh;
 }
 
